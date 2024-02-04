@@ -1,7 +1,7 @@
 
 
 #include "shifter_hw.h"
-
+#include <stdint.h>
 
 int shifter_hw_init (void) {
 	int ret = 0;

@@ -5,7 +5,6 @@
 
 #include "shifter_cfg.h"
 
-int shifter_init (void);
 
 enum shifter_type {
 	SHIFTER_TYPE_SEQUENCIAL,
@@ -14,7 +13,7 @@ enum shifter_type {
 
 
 struct shifter_cfg {
-	struct shifter_pin_gear;
+	struct shifter_gear_pins gear_pins;
 	uint8_t is_a_clutch;
 };
 

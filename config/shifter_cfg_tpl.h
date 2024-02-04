@@ -3,6 +3,7 @@
 #ifndef __SHIFTER_CFG_H__
 #define __SHIFTER_CFG_H__
 
+#include <stdint.h>
 /* delete this error after include the config file in the project */
 #error "delete tpl argument in file when put it in config project"
 
@@ -12,7 +13,7 @@
 /* Back Gear is counted there */
 #define SHIFTER_MAX_NB_GEAR 8
 
-struct shifter_pin_gear {
+struct shifter_gear_pins {
 	uint32_t shifter_back_gear;
 	uint32_t shifter_gear_1;
 	uint32_t shifter_gear_2;

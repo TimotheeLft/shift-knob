@@ -4,11 +4,13 @@
 #include "shifter.h"
 #include "errno.h"
 
+#include <stdlib.h>
+
 
 struct shifter_ctx {
-	enum shifter_type;
+	enum shifter_type type;
 	uint8_t current_gear;
-	bool is_int;
+	uint8_t is_int:1;
 
 };
 
