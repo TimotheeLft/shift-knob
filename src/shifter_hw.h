@@ -8,10 +8,12 @@
 #ifndef ___SHIFTER_HW_H__
 #define ___SHIFTER_HW_H__
 
+#include "shifter.h"
 
-int shifter_hw_init(void);
+int shifter_hw_init(struct shifter_gear_association *gear_assoc);
 
-int shifter_hw_pin_read(void);
+int shifter_hw_gear_read(uint32_t gear_port, uint32_t gear_pin, uint8_t *pin_value);
+
 
 
 #endif /* ___SHIFTER_HW_H__ */
