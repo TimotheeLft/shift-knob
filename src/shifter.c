@@ -38,6 +38,9 @@ static int shifter_manage_manual (uint8_t clutch_status) {
 	if (ctx.cfg.is_a_clutch) {
 		if (clutch_status) {
 			ctx.current_gear = SHIFTER_GEAR_NEUTRAL;
+			clutch_engage = true;
+		} else {
+			clutch_engage = false;
 		}
 	} else {
 		clutch_engage = true;
